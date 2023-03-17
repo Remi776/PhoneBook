@@ -1,3 +1,11 @@
+import json
+import csv
+
+last_user_id = 0
+files = ['.json', '.csv', '.txt']
+file_base = 'phonebook'
+
+
 def convert_to_csv():
     data = json.load(open(file_base + files[0], encoding='utf-8'))
     columns = ['id', 'first_name', 'last_name', 'phone', 'email', 'address', 'note']

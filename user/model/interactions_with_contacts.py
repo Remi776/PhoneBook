@@ -1,5 +1,9 @@
 import json
 
+last_user_id = 0
+files = ['.json', '.csv', '.txt']
+file_base = 'phonebook'
+
 
 def display_all_contacts():
     data = json.load(open(file_base + files[0], encoding='utf-8'))
