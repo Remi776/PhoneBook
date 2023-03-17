@@ -1,5 +1,6 @@
 import json
 
+
 def display_all_contacts():
     data = json.load(open(file_base + files[0], encoding='utf-8'))
     for person in data:
