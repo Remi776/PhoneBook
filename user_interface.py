@@ -11,7 +11,7 @@ def main_menu():
                        '2. Add new contact\n'
                        '3. Search contact\n'
                        '4. Edit contact\n'
-                       '5. Convert .json\n'
+                       '5. Convert\n'
                        '6. Exit\n')
         match answer:
             case '1':
@@ -47,6 +47,7 @@ def main_menu():
                         iwc.display_all_contacts()
                         iwc.delete_contact()
                     case '2':
+                        iwc.display_all_contacts()
                         rename_answer = input('\nEdit:\n'
                                               '1.first_name\t2.last_name\t3.phone\t4.address\t5.email\t6.note\n')
                         match rename_answer:
